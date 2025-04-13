@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Florian Furrer | Links</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #121212;
+      color: #d4d4d4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 500px;
+      width: 100%;
+      background-color: #1c1c1c;
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin: 0.5rem 0;
+      color: #ffffff;
+      letter-spacing: 0.5px;
+    }
+
+    p.bio {
+      font-size: 1rem;
+      color: #aaaaaa;
+      margin-bottom: 2rem;
+      letter-spacing: 0.3px;
+    }
+
+    .links-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 999px;
+      margin-bottom: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      border: 2px solid #ffffff;
+      background-color: transparent;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      width: 220px; /* fixed width for all buttons */
+      text-align: center;
+    }
+
+    .link img {
+      width: 20px;
+      height: 20px;
+      filter: brightness(0) invert(1);
+      transition: filter 0.3s ease;
+    }
+
+    .link:hover {
+      background-color: #ffffff;
+      color: #121212;
+    }
+
+    .link:hover img {
+      filter: brightness(0);
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.75rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="Picture.JPG" alt="Your Avatar" class="avatar" />
+    <h1>Florian Furrer</h1>
+    <p class="bio">Environment Artist | CG Generalist</p>
+
+    <div class="links-wrapper">
+      <a href="https://linkedin.com/in/yourprofile" class="link" target="_blank">
+        <img src="Linkedin.png" alt="LinkedIn Icon" />
+        LinkedIn
+      </a>
+
+      <a href="https://instagram.com/yourprofile" class="link" target="_blank">
+        <img src="Instagram.png" alt="Instagram Icon" />
+        Instagram
+      </a>
+
+      <a href="https://artstation.com/yourprofile" class="link" target="_blank">
+        <img src="Artstation.png" alt="ArtStation Icon" />
+        ArtStation
+      </a>
+
+      <a href="mailto:you@example.com" class="link">
+        <img src="Mail.png" alt="Email Icon" />
+        Contact Me
+      </a>
+    </div>
+
+    <footer>© 2025 Florian Furrer</footer>
+  </div>
+</body>
+</html>
