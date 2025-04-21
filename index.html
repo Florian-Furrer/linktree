@@ -56,29 +56,32 @@
     }
 
     .link {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      gap: 0.75rem;
-      color: #ffffff;
-      text-decoration: none;
-      padding: 0.75rem 1.5rem;
-      border-radius: 999px;
-      margin-bottom: 1rem;
-      font-weight: 600;
-      letter-spacing: 0.5px;
-      border: 2px solid #ffffff;
-      background-color: transparent;
-      transition: background-color 0.3s ease, color 0.3s ease;
-      width: 220px; /* fixed width for all buttons */
-      text-align: center;
+    position: relative;
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 999px;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 220px;
+    text-align: center;
     }
 
     .link img {
-      width: 20px;
-      height: 20px;
-      filter: brightness(0) invert(1);
-      transition: filter 0.3s ease;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+    transition: filter 0.3s ease;
+    pointer-events: none;
     }
 
     .link:hover {
