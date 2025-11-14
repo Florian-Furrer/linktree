@@ -1,8 +1,8 @@
 document.getElementById("year").textContent = new Date().getFullYear();
 
 const params = new URLSearchParams(window.location.search);
-const set = params.get("set") === "alt" ? "alt" : "main";
-const jsonFile = `links-${set}.json`;
+const set = params.get("set") === "cg" ? "CG_Generalist" : "Environment_Generalist";
+const jsonFile = `${set}_links.json`;
 
 fetch(jsonFile)
   .then(res => res.json())
