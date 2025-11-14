@@ -2,7 +2,7 @@
   {
     "label": "Showreel",
     "href": "https://vimeo.com/1119744787",
-    "icon": "Icons/showreel.png.png"
+    "icon": "Icons/showreel.png"
   },
   {
     "label": "LinkedIn",
@@ -11,7 +11,7 @@
   },
   {
     "label": "CV",
-    "href": "CV/Florian_Furrer_CG_Generalist_CV.pdf",
+    "href": "CV/Florian_Furrer_Environment_Generalist_CV.pdf",
     "icon": "Icons/resume.png"
   },
   {
