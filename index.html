@@ -1,34 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
- <!-- 
-<script>
-  const links = {
-    showreel: "https://vimeo.com/1119744787",
-    linkedin: "https://www.linkedin.com/in/florian-furrer-175889240/",
-    cv: "Florian_Furrer_Environment_Generalist_CV.pdf",
-    instagram: "https://www.instagram.com/florian.furreel/",
-    artstation: "https://www.artstation.com/florian_furrer",
-    email: "mailto:test.user.vfx@gmail.com"
-  };
 
+ <!-- LINK TO AVATAR -->
+<script>
   const icons = {
-    showreel: "showreel.png.png",
-    linkedin: "LinkedIn.png",
-    cv: "resume.png",
-    instagram: "Instagram.png",
-    artstation: "Artstation.png",
-    email: "Mail.png",
     avatar: "Picture.JPG"
   };
 </script>
--->
+
+
+  <!-- TITLE -->
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Florian Furrer | Links</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
-
+  <!-- FORMATING / STYLE -->
   <style>
     body {
       margin: 0;
@@ -127,6 +115,7 @@
 </head>
 
 
+<!-- SETTING UP BUTTONS - RELATIVE PATHS FROM LINKS.JSON FILES --> 
 <body>
   <div class="container">
     <img src="" alt="Your Avatar" class="avatar" id="avatar" />
@@ -170,70 +159,24 @@
   </script>
 
 
-<!--
-<body>
-   
-  <div class="container">
-    <img src="Picture.JPG" alt="Your Avatar" class="avatar" />
-    <h1>Florian Furrer</h1>
-    <p class="bio">Environment Artist | CG Generalist</p>
 
-    <div class="links-wrapper">
-      <a href="https://vimeo.com/1119744787" class="link" target="_blank">
-        <img src="showreel.png.png" alt="Showreel Icon" />
-        Showreel
-      </a>
-      
-      <a href="https://www.linkedin.com/in/florian-furrer-175889240/" class="link" target="_blank">
-        <img src="LinkedIn.png" alt="LinkedIn Icon" />
-        LinkedIn
-      </a>
-
-      <a href="Florian_Furrer_Environment_Generalist_CV.pdf" class="link" target="_blank">
-        <img src="resume.png" alt="resume Icon" />
-        CV
-      </a>
-
-      <a href="https://www.instagram.com/florian.furreel/" class="link" target="_blank">
-        <img src="Instagram.png" alt="Instagram Icon" />
-        Instagram
-      </a>
-
-      
-      <a href="https://www.artstation.com/florian_furrer" class="link" target="_blank">
-        <img src="Artstation.png" alt="ArtStation Icon" />
-        ArtStation
-      </a>
-     
-<!--
-
-      <a href="https://vimeo.com/user229635212" class="link" target="_blank">
-        <img src="vimeo.png" alt="Vimeo Icon" />
-        Vimeo     
-      </a>
-       
-
-      <a href="mailto:florian.furrer.vfx@gmail.com" class="link">
-        <img src="Mail.png" alt="Email Icon" />
-        Contact Me
-      </a>
-    </div>
-  <!-- -->
-
+    <!-- FOOTNOTE -->
+ 
     <footer>© <span id="year"></span> Florian Furrer</footer>
 
   </div>
 
-  
+   <!-- COPYRIGHT / YEAR -->
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 
-  
+  <!-- REFERNCE TO SCRIPT.JS WHICH CONTAINS LOGIC TO PULL CORRECT LINKS --> 
   <script src="script.js"></script>
 
 </body>
 </html>
+
 
 
 
