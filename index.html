@@ -1,10 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+<script>
+  const links = {
+    showreel: "https://vimeo.com/1119744787",
+    linkedin: "https://www.linkedin.com/in/florian-furrer-175889240/",
+    cv: "Florian_Furrer_Environment_Generalist_CV.pdf",
+    instagram: "https://www.instagram.com/florian.furreel/",
+    artstation: "https://www.artstation.com/florian_furrer",
+    email: "mailto:test.user.vfx@gmail.com"
+  };
+
+  const icons = {
+    showreel: "showreel.png.png",
+    linkedin: "LinkedIn.png",
+    cv: "resume.png",
+    instagram: "Instagram.png",
+    artstation: "Artstation.png",
+    email: "Mail.png",
+    avatar: "Picture.JPG"
+  };
+</script>
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Florian Furrer | Links</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+
   <style>
     body {
       margin: 0;
@@ -101,7 +124,54 @@
     }
   </style>
 </head>
+
+
 <body>
+  <div class="container">
+    <img src="" alt="Your Avatar" class="avatar" id="avatar" />
+    <h1>Florian Furrer</h1>
+    <p class="bio">Environment Artist | CG Generalist</p>
+
+    <div class="links-wrapper" id="links-wrapper"></div>
+
+    <footer>© <span id="year"></span> Florian Furrer</footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("avatar").src = icons.avatar;
+
+    const wrapper = document.getElementById("links-wrapper");
+
+    const linkData = [
+      { href: links.showreel, icon: icons.showreel, label: "Showreel" },
+      { href: links.linkedin, icon: icons.linkedin, label: "LinkedIn" },
+      { href: links.cv, icon: icons.cv, label: "CV" },
+      { href: links.instagram, icon: icons.instagram, label: "Instagram" },
+      { href: links.artstation, icon: icons.artstation, label: "ArtStation" },
+      { href: links.email, icon: icons.email, label: "Contact Me" }
+    ];
+
+    linkData.forEach(({ href, icon, label }) => {
+      const a = document.createElement("a");
+      a.href = href;
+      a.className = "link";
+      a.target = "_blank";
+
+      const img = document.createElement("img");
+      img.src = icon;
+      img.alt = `${label} Icon`;
+
+      a.appendChild(img);
+      a.appendChild(document.createTextNode(label));
+      wrapper.appendChild(a);
+    });
+  </script>
+
+
+<!--
+<body>
+   
   <div class="container">
     <img src="Picture.JPG" alt="Your Avatar" class="avatar" />
     <h1>Florian Furrer</h1>
@@ -140,13 +210,14 @@
         <img src="vimeo.png" alt="Vimeo Icon" />
         Vimeo     
       </a>
-       -->
+       
 
       <a href="mailto:florian.furrer.vfx@gmail.com" class="link">
         <img src="Mail.png" alt="Email Icon" />
         Contact Me
       </a>
     </div>
+   -->
 
     <footer>© <span id="year"></span> Florian Furrer</footer>
 
@@ -158,6 +229,7 @@
   </script>
 </body>
 </html>
+
 
 
 
