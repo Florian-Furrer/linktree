@@ -227,18 +227,14 @@
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+
+  
+  <script src="script.js"></script>
+
 </body>
 </html>
 
 
-<!--   reference to proper link json file      -->
- <script>
-const params = new URLSearchParams(window.location.search);
-const set = params.get("set") || "main";
-fetch(`links-${set}.json`)
-  .then(res => res.json())
-  .then(data => renderLinks(data));
- <script>
 
 
 
