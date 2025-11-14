@@ -1,0 +1,32 @@
+[
+  {
+    "label": "Showreel",
+    "href": "https://vimeo.com/1119744787",
+    "icon": "showreel.png.png"
+  },
+  {
+    "label": "LinkedIn",
+    "href": "https://www.linkedin.com/in/florian-furrer-175889240/",
+    "icon": "LinkedIn.png"
+  },
+  {
+    "label": "CV",
+    "href": "Florian_Furrer_Environment_Generalist_CV.pdf",
+    "icon": "resume.png"
+  },
+  {
+    "label": "Instagram",
+    "href": "https://www.instagram.com/florian.furreel/",
+    "icon": "Instagram.png"
+  },
+  {
+    "label": "ArtStation",
+    "href": "https://www.artstation.com/florian_furrer",
+    "icon": "Artstation.png"
+  },
+  {
+    "label": "Contact Me",
+    "href": "mailto:test.user.vfx@gmail.com",
+    "icon": "Mail.png"
+  }
+]
